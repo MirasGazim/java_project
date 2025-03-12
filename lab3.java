@@ -5,7 +5,7 @@ class Employee{
         this.basePay = basePay;
         this.hoursWorked = hoursWorked;
 
-    }
+    }   
 
     double calculateSalary() {
         if (basePay < 8.00) {

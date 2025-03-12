@@ -5,6 +5,19 @@ public class gazim {
     public String color;
     public byte[] coordinate;
 
+    public gazim(float _speed, int _weight, String _color, byte[] _coordinate){
+        System.out.println("Object created");
+        setvalues(_speed, _weight, _color, _coordinate);
+        System.out.println(getValues());
+    }
+
+    public gazim(int _weight, byte[] _coordinate){
+        weight = _weight;
+        coordinate = _coordinate;
+        System.out.println(getValues());
+
+    }
+
     public void setvalues(float _speed, int _weight, String _color, byte[] _coordinate){
         speed = _speed;
         weight = _weight;
@@ -24,6 +37,7 @@ public class gazim {
         return info + info_coordinate;
 
     }
+    
     
     void vark(){
         System.out.println("hello world");
