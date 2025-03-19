@@ -1,15 +1,20 @@
 package java_1;
 public class gazim {
-    public float speed;
-    public int weight;
-    public String color;
-    public byte[] coordinate;
-
+    private float speed;
+    private int weight;
+    private String color;
+    private byte[] coordinate;
+    
+    public gazim(){
+            
+    }
+        
     public gazim(float _speed, int _weight, String _color, byte[] _coordinate){
         System.out.println("Object created");
         setvalues(_speed, _weight, _color, _coordinate);
         System.out.println(getValues());
     }
+
 
     public gazim(int _weight, byte[] _coordinate){
         weight = _weight;
@@ -17,6 +22,9 @@ public class gazim {
         System.out.println(getValues());
 
     }
+
+    
+
 
     public void setvalues(float _speed, int _weight, String _color, byte[] _coordinate){
         speed = _speed;
@@ -26,6 +34,8 @@ public class gazim {
 
 
     }
+
+    
 
     public String getValues(){
         String info = "object speed: " + speed + ". weight: " + weight + ". color: " + color + "\n";

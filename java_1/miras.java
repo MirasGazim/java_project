@@ -4,19 +4,29 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+
 import java_1.gazim;
 
 public class miras {
     public static void main(String[] args){
         
+        gazim mir = new gazim(1223, new byte[] {12, 34, 5, 4});
+        gazim nit = new gazim(4.5f, 34, "white", new byte[] {12, 34, 46});
+        System.out.println();
         
-        gazim sss = new gazim(234f, 2000, "black", new byte[] {12, 12, 23});
-        System.out.println(sss.getValues());
-        gazim rrr = new gazim(345, new byte[] {12,  34, 45});
-        gazim nurs =new gazim(234f, 1233, "white", new byte[] {12, 23, 34, 34});
         
+        boolean m = false;
+        if(!m){
+            System.out.println("good");
+        }else{
+            System.out.println("reij");
+        }
     
-    }  
+
+
+    }
+    
+   
 
     
     
